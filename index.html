@@ -26,7 +26,7 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="videos.html">Videos</a></li>
-                <li>Contáctanos</li>
+                <li><a href="formulario.html">Contáctanos</a></li>
             </ul>
             
         </nav>   
@@ -103,6 +103,29 @@
                             
                 </header>
             </article>
+
+            <p>Click the button to get your coordinates.</p>
+
+            <button onclick="getLocation()">Try It</button>
+
+            <p id="api"></p>
+
+            <script>
+                var x = document.getElementById("api");
+                
+                function getLocation() {
+                  if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                  } else { 
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                  }
+                }
+                
+                function showPosition(position) {
+                  x.innerHTML = "Latitude: " + position.coords.latitude + 
+                  "<br>Longitude: " + position.coords.longitude;
+                }
+            </script>
             
         </section>
         
