@@ -10,28 +10,44 @@
         <link rel="shodrtcut icon" href="imagenes/icon.png" type="imagen/png"/>
     </head>
     <body>
-        <header>
-            <div id="Titulo">
-                <hgroup>
-                    <h1>Videos SQL</h1>
-                </hgroup>
-            </div>
-        </header>
-        <nav>
-            <div id="Menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="videos.html">Videos</a></li>
-                    <li>Contáctanos</li>
-                </ul>
-            </div>
-        </nav>   
-        
-
         <aside>
+            <h2>Listado de videos</h2>
+                <ul>
+                    <input  type=image src="imagenes/video1.png" width="150" onClick="myFunc(1)">
+                    <input  type=image src="imagenes/video2.png" width="150" onClick="myFunc(2)">
+                </ul>
         </aside>
 
+        <header id="Titulo">
             
+            <hgroup>
+                <h1>Videos SQL</h1>
+            </hgroup>
+            
+        </header>
+        <nav id="Menu">
+            
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li>Contáctanos</li>
+            </ul>
+            
+        </nav>   
+
+        
+        <video id="VideoPlayer" width='320' height="240" controls='controls'>
+                   
+            <source src="videos/video1.mp4" type="video/mp4" media="screen and (min-width:320px)"></source>
+                            
+        </video>
+
+        <script type="text/javascript">
+            function myFunc(id) {
+                var nombre = "videos/video"+id+".mp4";
+                document.getElementById("VideoPlayer").src = nombre}
+         </script>
+
         <footer>
             <p>Derechos reservados para el IES El Majuelo, 2019</p>
         </footer>
