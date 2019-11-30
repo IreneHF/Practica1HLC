@@ -35,3 +35,32 @@ html
     background-size: 180%;
     background-repeat: repeat;
 }
+
+#Menu 
+{
+    background-color: #000000;
+    padding: 30;
+}
+
+#Menu ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#Menu ul li
+{
+    display: inline-block;
+}
+
+#Menu ul li a{
+    color: white;
+    display: block;
+    padding: 10px 238px;
+    text-decoration: none;
+}
+
+#Menu ul li a:hover{
+    background-color: #3968eb;
+}

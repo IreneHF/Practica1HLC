@@ -1,0 +1,43 @@
+legend
+{
+    float: inline-start;
+    display: inline-block;
+    list-style-type: circle;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    color: mediumblue;
+}
+
+#bloqueDatosPersonales
+{
+    background-color: wheat;
+    border-color: red;
+    
+}
+
+#bloqueDatosAdicionales
+{
+    background-color: thistle;
+    border-color: red;
+}
+
+li{
+    list-style-type: circle;
+}
+
+h1::selection
+{
+    background: rgb(165, 9, 226);
+    color: black;
+    text-shadow: 1px 1px #fff;
+
+}
+
+h1::-moz-selection
+{
+    background: rgb(165, 9, 226);
+    color: black;
+    text-shadow: 1px 1px #fff;
+
+}
