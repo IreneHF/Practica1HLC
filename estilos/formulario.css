@@ -4,8 +4,9 @@ legend
     display: inline-block;
     list-style-type: circle;
     font-size: 25px;
-    font-weight: bold;
-    font-style: italic;
+    /*font-weight: bold;
+    font-style: italic;*/   
+    font-family: 'Solway', serif;
     color: mediumblue;
 }
 

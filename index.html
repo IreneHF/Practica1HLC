@@ -7,7 +7,9 @@
         <meta name="description" content="pŕactica hlc"/>
         <title>Practica 1 hlc</title>
         <link rel="stylesheet" href="estilos/index.css" type="text/css"/>
-        <link rel="shodrtcut icon" href="imagenes/icon.png" type="imagen/png"/>
+        <link rel="shortcut icon" href="imagenes/icon.png" type="imagen/png"/>
+        <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
     </head>
     <body>
         <header id="Titulo">
@@ -35,7 +37,7 @@
             
             <article>
                 <header>
-                     <h1>introducción a SQL</h1>
+                     <h1>Introducción a SQL</h1>
                     <p>
                         <mark>SQL</mark> <small>(por sus siglas en inglés Structured Query Language; 
                             en español lenguaje de consulta estructurada)</small> es un lenguaje 
@@ -104,9 +106,10 @@
                 </header>
             </article>
 
-            <p>Click the button to get your coordinates.</p>
 
-            <button onclick="getLocation()">Try It</button>
+            <p>Pulse el boton para ver su GEOLOCALIZACION</p>
+
+            <button onclick="getLocation()">Pulse aquí</button>
 
             <p id="api"></p>
 
@@ -117,7 +120,7 @@
                   if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(showPosition);
                   } else { 
-                    x.innerHTML = "Geolocation is not supported by this browser.";
+                    x.innerHTML = "La Geolocalizacion no es compatible con su navegador.";
                   }
                 }
                 
@@ -131,6 +134,7 @@
         
         <footer>
             <p>Derechos reservados para el IES El Majuelo, 2019</p>
+            <a href="https://validator.w3.org/#validate_by_upload">Validado en W3C</a>
         </footer>
   
     </body>

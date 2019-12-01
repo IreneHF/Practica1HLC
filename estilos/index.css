@@ -1,6 +1,6 @@
-#Titulo
+#Titulo h1
 {
-
+    
 }
 
 .autor
@@ -27,6 +27,7 @@ body
     background-color: rgb(145, 169, 168);
     margin-right: 150px;
     margin-left: 150px;
+    font-family: 'Solway', serif;
 }
 
 html
@@ -59,6 +60,9 @@ html
     display: block;
     padding: 10px 238px;
     text-decoration: none;
+    transition: all 0.3s linear;
+    font-size: 18px;
+    font-family: 'Bebas Neue', cursive;
 }
 
 #Menu ul li a:hover{
