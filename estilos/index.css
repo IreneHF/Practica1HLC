@@ -1,11 +1,13 @@
 #Titulo h1
 {
-    
+    text-align: center
 }
 
 .autor
 {
-
+    display: inline-block;
+	font-size: 18px;
+	padding: 5px;
 }
 
 a[href$=".png"]
@@ -13,8 +15,21 @@ a[href$=".png"]
     /*Poner borde*/
 }
 
+img
+{
+	border: 2px solid green;
+	margin: 10px auto;
+	display: block;
+}
+
+figcaption
+{
+	text-align: center;
+}
+
 article
 {
+	margin: 70px;
     border: 2px solid red;
     padding: 10px;
     border-radius: 25px;
@@ -23,7 +38,9 @@ article
 
 body
 {
+	width: 75%;
     border: 2px solid black;
+	padding: 15px;
     background-color: rgb(145, 169, 168);
     margin-right: 150px;
     margin-left: 150px;
@@ -47,8 +64,6 @@ html
 #Menu ul
 {
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 #Menu ul li
@@ -59,7 +74,7 @@ html
 #Menu ul li a{
     color: white;
     display: block;
-    padding: 10px 238px;
+    padding: 10px 125px;
     text-decoration: none;
     transition: all 0.3s linear;
     font-size: 18px;
