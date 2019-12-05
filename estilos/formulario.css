@@ -53,3 +53,18 @@ input:focus
 	border: 2px solid #000;
     background: #ABE96E;
 }
+
+td:first-child {
+    color: green;
+    
+  }
+
+  td:nth-child(2n) {
+    color: blue;
+    
+  }
+
+  td:last-child {
+    color: red;
+    
+  }
