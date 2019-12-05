@@ -97,3 +97,8 @@ button, .button
 	border: none;
 	color: #3dd86e;
 }
+
+#micanvas
+{
+	margin-left: 120px;
+}

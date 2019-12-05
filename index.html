@@ -106,6 +106,40 @@
                 </header>
             </article>
 
+            <canvas height="200px" width="1400px" id="micanvas">
+                Su navegador no soporta en elemento CANVAS</canvas>
+                 
+            <script>
+                var canvas = document.getElementById("micanvas");
+                var contexto = canvas.getContext("2d");
+                contexto.strokeStyle = "red";
+                contexto.strokeRect(10, 10, 200, 100);
+
+                contexto.strokeStyle = "red";
+                contexto.strokeRect(320, 10, 200, 100);
+                    
+                contexto.strokeStyle = "red";
+                contexto.arc(650,60,50,0,(Math.PI/180)*360,true);
+                contexto.lineWidth = 1;
+
+                contexto.moveTo(210,55);
+                contexto.lineTo(320,55);
+
+                contexto.moveTo(520,55);
+                contexto.lineTo(600,55);
+                    
+                contexto.font = "bold 22px sans-serif";
+                contexto.fillText("Búsqueda",50,65);
+
+                contexto.fillText("Base datos",350,65);
+
+                contexto.font = "bold 12px sans-serif";
+                contexto.fillText("Documentos",608,61);
+                    
+                contexto.stroke();    
+                    
+            </script>
+
 
             <p>Pulse el boton para ver su GEOLOCALIZACION</p>
 
@@ -130,6 +164,8 @@
                 }
             </script>
             
+
+
         </section>
         
         <footer>
