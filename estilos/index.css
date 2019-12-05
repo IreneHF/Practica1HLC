@@ -1,6 +1,11 @@
 #Titulo h1
 {
-    text-align: center
+    text-align: center;
+	background-image: url("../imagenes/imagen.png");
+	background-size: 50px 46px;
+	background-repeat: no-repeat;
+	margin-right: 280px;
+	margin-left: 280px;
 }
 
 .autor
@@ -30,10 +35,11 @@ figcaption
 article
 {
 	margin: 70px;
-    border: 2px solid red;
+    border: 2px solid;
+	border-color: rgb(25, 71, 33);
     padding: 10px;
     border-radius: 25px;
-    
+    background-color: rgb(185, 249, 160);
 }
 
 body
@@ -41,7 +47,7 @@ body
 	width: 75%;
     border: 2px solid black;
 	padding: 15px;
-    background-color: rgb(145, 169, 168);
+    background-color: rgb(135, 243, 183);
     margin-right: 150px;
     margin-left: 150px;
     font-family: 'Solway', serif;
@@ -83,4 +89,11 @@ html
 
 #Menu ul li a:hover{
     background-color: #3968eb;
+}
+
+button, .button
+{
+	background-color: #000993;
+	border: none;
+	color: #3dd86e;
 }
